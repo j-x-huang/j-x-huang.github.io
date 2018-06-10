@@ -12,24 +12,34 @@ p {
     margin-bottom: 45px;
 }
 
-.bg-1 {
+.bg-green {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
 }
 
-.bg-2 {
+.bg-blue {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
 }
 
-.bg-3 {
+.bg-white {
     background-color: #ffffff; /* White */
     color: #555555;
 }
 
-.bg-4 {
+.bg-gray {
     background-color: #2f2f2f; /* Black Gray */
     color: #fff;
+}
+
+.bg-lgray {
+    background-color: #f2f2f2; /* Light Grey */
+    color: #555555;
+}
+
+.title {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .container-fluid {
