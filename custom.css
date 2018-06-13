@@ -61,6 +61,10 @@ p {
 
 }
 
+.panel-default .panel-heading {
+    background-color: white;
+}
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -71,10 +75,15 @@ p {
     letter-spacing: 5px;
 }
 
-.navbar-nav li a:hover {
+.navbar-nav li a:hover, .navbar-nav li.active a  {
     color: #1abc9c !important;
+    background-color: transparent !important;
 }
 
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
 img {
     margin-right: 23px;
 }

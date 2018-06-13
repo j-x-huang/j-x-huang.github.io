@@ -15,10 +15,10 @@
   <script src="./dist/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="80">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -34,19 +34,19 @@
             <a href="#aboutMe">About</a>
           </li>
           <li>
-            <a href="#">Experience</a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#">Interests</a>
+            <a href="#interests">Interests</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -55,7 +55,7 @@
 
   <!-- Page Header -->
   <div class="container-fluid bg-green text-center">
-    <img src="" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+    <img src="" class="img-responsive img-circle margin" style="display:inline" alt="me" width="350" height="350">
     <h3>Oh, Hello there!</h3>
   </div>
 
@@ -76,147 +76,177 @@
   </div>
 
   <!--Xp -->
-  <div class="title bg-green text-center">
+  <div class="title bg-green text-center" id="experience">
     <h3>Experience</h3>
   </div>
 
   <div class="container-fluid bg-white text-left">
-    <h3>TODO</h3>
+    <div class="col-sm-2"> </div>
+    <div class="col-sm-8">
+      <img src="images/logos/iag.png" alt="iag" style="float:left; width: 70px;">
+      <h3>IAG NZ
+        <span style="float: right;">Software Engineering Intern</span>
+      </h3>
+      <hr>
+      <h4>
+        <i>December 2017 – March 2018</i>
+      </h4>
+
+      <h4>Accomplishments:</h4>
+      <p>• Designed and implemented a Blockchain for the processing of insurance claims.</br>
+        • Deployed the Blockchain network on the Azure cloud.</br>
+        • Implemented a Web API and Web App for interacting with the blockchain nodes.</br>
+        • Participated in a week-long Hackfest with leading Microsoft blockchain developers.
+      </p>
+
+    </div>
+    <div class="col-sm-2"></div>
   </div>
 
-  <!-- Projects -->
-  <div class="title bg-green title text-center">
+  <!-- =================================Projects =================================-->
+  <div class="title bg-green title text-center" id="projects">
     <h3>Projects</h3>
   </div>
 
+  <!-- Task Scheduler -->
   <div class="container-fluid bg-white text-left">
-    
-      <div class="row">
-          <div class="col-sm-1"></div>
-          <div class="col-sm-6">
-            <h3>Task Scheduler</h3>
-            <p>This is an application that determines the optimal way to schedule a program on a multi-core CPU. </p>
-            <p>The application is written in Java and the search algorithm is parallelised to speed up the search. This project
-              was done in a team of 5 people.
-            </p>
-            <div class="rol">
-              <div class="col-sm-12">
-                  <img src="images/logos/java.png" height="40">
-              </div>
 
-            </div><br>
-            <button class="btn button-green">View on GitHub</button>
-    
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6">
+        <h3>Task Scheduler</h3>
+        <p>This is an application that determines the optimal way to schedule a program on a multi-core CPU. </p>
+        <p>The application is written in Java and the search algorithm is parallelised to speed up the search. This project
+          was done in a team of 5 people.
+        </p>
+        <div class="rol">
+          <div class="col-sm-12">
+            <img src="images/logos/java.png" height="40">
           </div>
-          <div class="col-sm-4">
-    
-            <img src="images/task_scheduler.png" alt="task_scheduler" width="100%">
-    
-          </div>
-          <div class="col-sm-1"></div>
+
         </div>
-  </div>
-
-  <div class="container-fluid bg-lgray text-left">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-4">
-        <img src="images/voxspell.PNG" alt="voxspell" width="100%">
-
-      </div>
-      <div class="col-sm-6">
-        <h3>Voxspell</h3>
-        <p>Voxspell is a spelling aid application that aims to improve users’ spelling. 
-          The application is written in Java, using Java’s Swing API to provide the GUI. The spelling aid uses word dictation to test the users spelling. </p>
-
-          <div class="rol">
-              <div class="col-sm-12">
-                  <img src="images/logos/java.png" height="40">
-                  <img src="images/logos/bash.png" height="40">
-              </div>
-
-            </div><br> 
-        <button class="btn button-green">View on GitHub</button>
-
-
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-  </div>
-
-  <div class="container-fluid bg-white text-left">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-6">
-        <h3>Space Crysis</h3>
-        <p>- This is a puzzle-platformer game made using Unity 3D. The player solves puzzles and riddles to improve their critical thinking. 
-          This project was done in a team of 8 people.</p>
-        <div class="rol">
-          <div class="col-sm-12">
-              <img src="images/logos/unity.png" height="40">
-              <img src="images/logos/csharp.png" height="40">
-          </div>
-
-        </div><br>
-        <button class="btn button-green">View on GitHub</button>
-
-      </div>
-      <div class="col-sm-4 text-left">
-        <img src="images/sc1.PNG" alt="space crysis.1" width="70%" style="margin-bottom: 10px;">
         <br>
-        <img src="images/sc2.PNG" alt="space crysis.2" width="70%">
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-  </div>
-
-  <div class="container-fluid bg-lgray text-left">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-4">
-        <img src="images/contoso.png" alt="contoso" width="45%" style="margin-right: 5px;">
-        <img src="images/contoso2.png" alot="contoso2" width="45%">
-      </div>
-      <div class="col-sm-6">
-        <h3>Contoso Bank Chatbot</h3>
-        <p>A banking chatbot made using the Microsoft Bot Framework, LUIS (a natural language processor) and Node JS. </p>
-        <p>Chatbot helps users with everyday banking, such as: viewing balances, opening accounts, transferring money and more.</p>
-
-          <div class="rol">
-              <div class="col-sm-12">
-                  <img src="images/logos/nodejs.png" height="40">
-                  <img src="images/logos/Microsoft_Azure.png" height="40">
-                  <img src="images/logos/bot_framework.png" width="80">
-                  <img src="images/logos/luis.jpg" height="40">
-              </div>
-
-            </div><br> 
-        <button class="btn button-green">Visit Website</button>
-
-
-      </div>
-      <div class="col-sm-1"></div>
-    </div>
-
-  <div class="container-fluid bg-white text-left">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-6">
-        <h3>Explore Your Neighbourhood</h3>
-        <p>A cross-platform mobile app created within Xamarin Forms, using C#. 
-          Users are given a list of objects and when they take a photo, the app uses the Microsoft’s Custom Vision API to identify the objects from within the photos.  </p>
-        <div class="rol">
-          <div class="col-sm-12">
-              <img src="images/logos/csharp.png" height="40">
-              <img src="images/logos/xamarin.png" height="40">
-              <img src="images/logos/Microsoft_Azure.png" height="40">
-          </div>
-
-        </div><br>
         <button class="btn button-green">View on GitHub</button>
 
       </div>
-      <div class="col-sm-4 text-left">
+      <div class="col-sm-4">
+
+        <img src="images/task_scheduler.png" alt="task_scheduler" width="100%">
+
+      </div>
       <div class="col-sm-1"></div>
     </div>
   </div>
 
+  <!-- Voxspell -->
+  <div class="container-fluid bg-lgray text-left">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <img src="images/voxspell.PNG" alt="voxspell" width="100%">
+
+    </div>
+    <div class="col-sm-6">
+      <h3>Voxspell</h3>
+      <p>Voxspell is a spelling aid application that aims to improve users’ spelling. The application is written in Java, using
+        Java’s Swing API to provide the GUI. The spelling aid uses word dictation to test the users spelling. </p>
+
+      <div class="rol">
+        <div class="col-sm-12">
+          <img src="images/logos/java.png" height="40">
+          <img src="images/logos/bash.png" height="40">
+        </div>
+
+      </div>
+      <br>
+      <button class="btn button-green">View on GitHub</button>
+
+
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  </div>
+
+  <!-- Space Crisis -->
+  <div class="container-fluid bg-white text-left">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-6">
+      <h3>Space Crisis</h3>
+      <p>- This is a puzzle-platformer game made using Unity 3D. The player solves puzzles and riddles to improve their critical
+        thinking. This project was done in a team of 8 people.</p>
+      <div class="rol">
+        <div class="col-sm-12">
+          <img src="images/logos/unity.png" height="40">
+          <img src="images/logos/csharp.png" height="40">
+        </div>
+
+      </div>
+      <br>
+      <button class="btn button-green">View on GitHub</button>
+
+    </div>
+    <div class="col-sm-4 text-left">
+      <img src="images/sc1.PNG" alt="space crysis.1" width="70%" style="margin-bottom: 10px;">
+      <br>
+      <img src="images/sc2.PNG" alt="space crysis.2" width="70%">
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  </div>
+
+  <!-- Chat Bot -->
+  <div class="container-fluid bg-lgray text-left">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <img src="images/contoso.png" alt="contoso" width="45%" style="margin-right: 5px;">
+      <img src="images/contoso2.png" alot="contoso2" width="45%">
+    </div>
+    <div class="col-sm-6">
+      <h3>Contoso Bank Chatbot</h3>
+      <p>A banking chatbot made using the Microsoft Bot Framework, LUIS (a natural language processor) and Node JS. </p>
+      <p>Chatbot helps users with everyday banking, such as: viewing balances, opening accounts, transferring money and more.</p>
+
+      <div class="rol">
+        <div class="col-sm-12">
+          <img src="images/logos/nodejs.png" height="40">
+          <img src="images/logos/Microsoft_Azure.png" height="40">
+          <img src="images/logos/bot_framework.png" width="80">
+          <img src="images/logos/luis.jpg" height="40">
+        </div>
+
+      </div>
+      <br>
+      <button class="btn button-green">Visit Website</button>
+
+
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+  <!-- Explore Your Neighbourhood -->
+  <div class="container-fluid bg-white text-left">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-6">
+      <h3>Explore Your Neighbourhood</h3>
+      <p>A cross-platform mobile app created within Xamarin Forms, using C#. Users are given a list of objects and when they
+        take a photo, the app uses the Microsoft’s Custom Vision API to identify the objects from within the photos. </p>
+      <div class="rol">
+        <div class="col-sm-12">
+          <img src="images/logos/csharp.png" height="40">
+          <img src="images/logos/xamarin.png" height="40">
+          <img src="images/logos/Microsoft_Azure.png" height="40">
+        </div>
+
+      </div>
+      <br>
+      <button class="btn button-green">View on GitHub</button>
+
+    </div>
+    <div class="col-sm-4 text-left">
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+
+  <!-- TDD -->
   <div class="container-fluid bg-lgray text-left">
     <div class="col-sm-1"></div>
     <div class="col-sm-4">
@@ -225,21 +255,22 @@
     <div class="col-sm-6">
       <h3>Test Driven Development</h3>
       <p>This is a project for a real client, completed in a group of 4</p>
-      <p>This is a online search engine for start-up companies
-        and small businesses to analyse the market that they are interested in entering into. It is mainly
-        targeted at users who have limited business experience, and so will provide easy to understand
-        charts and diagrams when displaying its search results.</p>
-      <p>No functional system was implemented for this project. Instead, We focused on requirements engineering, prototyping, test-driven development and continuous integration.</p>
+      <p>This is a online search engine for start-up companies and small businesses to analyse the market that they are interested
+        in entering into. It is mainly targeted at users who have limited business experience, and so will provide easy to
+        understand charts and diagrams when displaying its search results.</p>
+      <p>No functional system was implemented for this project. Instead, We focused on requirements engineering, prototyping,
+        test-driven development and continuous integration.</p>
 
-        <div class="rol">
-            <div class="col-sm-12">
-                <img src="images/logos/java.png" height="40">
-                <img src="images/logos/junit.png" height="40">
-                <img src="images/logos/TravisCI.png" height="40">
-            </div>
+      <div class="rol">
+        <div class="col-sm-12">
+          <img src="images/logos/java.png" height="40">
+          <img src="images/logos/junit.png" height="40">
+          <img src="images/logos/TravisCI.png" height="40">
+        </div>
 
-          </div><br> 
-      <button class="btn button-green">Visit on GitHub</button>
+      </div>
+      <br>
+      <button class="btn button-green">View on GitHub</button>
 
 
     </div>
@@ -251,33 +282,36 @@
   </div>
 
   <!-- Skills -->
-  <div class="title bg-green text-center">
+  <div class="title bg-green text-center" id="skills">
     <h3>Skills</h3>
   </div>
+  <div class="row">
+    <div class="col-sm-2"></div>
 
-  <div class="container-fluid bg-white text-left">
-      <div class="panel panel-default">
-        <div class="panel-heading">Languages</div>
-        <div class="panel-body text-center">
-          <h3>Advanced - comfortable for coding tests</h3>
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <img src="images/logos/java.png" alt="java" width="120">
-              <img src="images/logos/kotlin.png" alt="kotlin" width="120">
+    <div class="col-sm-8">
+      <div class="container-fluid bg-white text-left">
+        <div class="panel panel-default">
+          <div class="panel-heading">Languages</div>
+          <div class="panel-body text-center">
+            <h3>Advanced - comfortable for coding tests</h3>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <img src="images/logos/java.png" alt="java" width="120">
+                <img src="images/logos/kotlin.png" alt="kotlin" width="120">
+              </div>
             </div>
-          </div>
-          <h3>Intermediate - Used for multiple projects. Not an expert at.</h3>
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <img src="images/logos/python.png" alt="python" width="120>">
-              <img src="images/logos/c.png" alt="c" width="120>">
-              <img src="images/logos/javascript.png" alt="javascript" width="120>">
-              <img src="images/logos/html_css.png" alt="html_css" width="280>">
-              <img src="images/logos/csharp.png" alt="csharp" width="120>">
+            <h3>Intermediate - Used for multiple projects. Not an expert at.</h3>
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <img src="images/logos/python.png" alt="python" width="120>">
+                <img src="images/logos/c.png" alt="c" width="120>">
+                <img src="images/logos/javascript.png" alt="javascript" width="120>">
+                <img src="images/logos/html_css.png" alt="html_css" width="280>">
+                <img src="images/logos/csharp.png" alt="csharp" width="120>">
 
+              </div>
             </div>
-          </div>
-          <h3>Beginner - Used once or twice</h3>
+            <h3>Beginner - Used once or twice</h3>
             <div class="row">
               <div class="col-sm-12 text-center">
                 <img src="images/logos/r.png" alt="r" width="120>">
@@ -288,41 +322,45 @@
             </div>
 
 
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">Web Frameworks</div>
-      <div class="panel-body text-center">
-        <img src="images/logos/angularjs.svg" alt="angularjs" width="120>">
-        <img src="images/logos/nodejs.png" alt="nodejs" width="120>">
-        <img src="images/logos/bootstrap.png" alt="bootstrap" width="120>">
+        <div class="panel panel-default">
+          <div class="panel-heading">Web Frameworks</div>
+          <div class="panel-body text-center">
+            <img src="images/logos/angularjs.svg" alt="angularjs" width="120>">
+            <img src="images/logos/nodejs.png" alt="nodejs" width="120>">
+            <img src="images/logos/bootstrap.png" alt="bootstrap" width="120>">
 
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">Cloud</div>
-      <div class="panel-body text-center">
-        <img src="images/logos/Microsoft_Azure.png" alt="azure" width="120>">
-        <img src="images/logos/mysql.png" alt="mysql" width="120>">
-        <img src="images/logos/gcp.png" alt="gcp" width="120>">
+        <div class="panel panel-default">
+          <div class="panel-heading">Cloud</div>
+          <div class="panel-body text-center">
+            <img src="images/logos/Microsoft_Azure.png" alt="azure" width="120>">
+            <img src="images/logos/mysql.png" alt="mysql" width="120>">
+            <img src="images/logos/gcp.png" alt="gcp" width="120>">
 
-      </div>
-    </div>
+          </div>
+        </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">Other</div>
-      <div class="panel-body text-center">
-        <img src="images/logos/git.png" alt="git" width="120>">
-        <img src="images/logos/bash.png" alt="bash" width="120>">
+        <div class="panel panel-default">
+          <div class="panel-heading">Other</div>
+          <div class="panel-body text-center">
+            <img src="images/logos/git.png" alt="git" width="120>">
+            <img src="images/logos/bash.png" alt="bash" width="120>">
 
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="col-sm-2"></div>
+
   <!-- Interests -->
-  <div class="title bg-green text-center">
+  <div class="title bg-green text-center" id="interests">
     <h3>Interests</h3>
   </div>
   <div class="container-fluid bg-white text-left">
@@ -330,11 +368,13 @@
   </div>
 
   <!-- Contact -->
-  <div class="title bg-green text-center">
+  <div class="title bg-green text-center" id="contact">
     <h3>Contact</h3>
   </div>
-  <div class="container-fluid bg-white text-left">
-    <p>The best way to contact me is through email: </br> <a href="mailto:huangxjack@gmail.com">huangxjack@gmail.com</a></p>
+  <div class="container-fluid bg-white text-center">
+    <p>The best way to contact me is through email: </br>
+      <a href="mailto:huangxjack@gmail.com">huangxjack@gmail.com</a>
+    </p>
     <p>Feel free to connect with me on LinkedIn as well.</p>
   </div>
 
