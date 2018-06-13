@@ -74,3 +74,7 @@ p {
 .navbar-nav li a:hover {
     color: #1abc9c !important;
 }
+
+img {
+    margin-right: 23px;
+}
