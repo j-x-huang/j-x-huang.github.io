@@ -87,3 +87,10 @@ p {
 img {
     margin-right: 23px;
 }
+
+.title { 
+    padding-top: 75px;
+    margin-top: -75px;
+    position: relative;
+    z-index: -1;
+}
