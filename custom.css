@@ -88,7 +88,7 @@ img {
     margin-right: 23px;
 }
 
-.title { 
+.title { /*anchoring */
     padding-top: 75px;
     margin-top: -75px;
     position: relative;
