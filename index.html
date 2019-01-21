@@ -6,9 +6,9 @@
   <title>Jack Huang</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/custom.css">
-  <link rel="stylesheet" href="/dist/css/bootstrap-social.css">
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./custom.css">
+  <link rel="stylesheet" href="./dist/css/bootstrap-social.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -53,7 +53,8 @@
 
   <!-- Page Header -->
   <div class="container-fluid bg-green text-center">
-    <img src="images/me.jpg" class="img-responsive img-circle margin rotate90 center" style="border-radius:50%;" alt="me" width="200" height="200">
+    <img src="images/me.jpg" class="img-responsive img-circle margin rotate90 center" style="border-radius:50%;" alt="me" width="200"
+      height="200">
     <h3>Oh, Hello there!</h3>
   </div>
 
@@ -82,17 +83,17 @@
 
     <div class="col-sm-2"> </div>
     <div class="col-sm-8">
-        <img src="images/logos/uoa.png" alt="uoa" style="float:left; width: 80px; margin-right: 9px;">
-        <h3>University of Auckland
-            <span style="float: right;">Teaching Assistant</span>
-          </h3>
-          <hr>
-          <h4>
-            <i>November 2018 – Present</i>
-          </h4>
-            <p>•	Helped tutor students enrolled in the Postgraduate Certificate in IT programme.</br>
-                •	Taught students about Java fundamentals, object-oriented programming principles and web development.               
-          </p>
+      <img src="images/logos/uoa.png" alt="uoa" style="float:left; width: 80px; margin-right: 9px;">
+      <h3>University of Auckland
+        <span style="float: right;">Teaching Assistant</span>
+      </h3>
+      <hr>
+      <h4>
+        <i>November 2018 – Present</i>
+      </h4>
+      <p>• Helped tutor students enrolled in the Postgraduate Certificate in IT programme.</br>
+        • Taught students about Java fundamentals, object-oriented programming principles and web development.
+      </p>
 
       <br>
       <img src="images/logos/iag.png" alt="iag" style="float:left; width: 70px;">
@@ -123,7 +124,87 @@
   </div>
 
 
-  
+  <!-- MedBloc -->
+  <div class="container-fluid bg-white text-left">
+
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-6">
+        <h3>MedBloc</h3>
+        <h4><i>Blockchain for the NZ healthcare system</i></h4>
+        <p>
+          MedBloc is a blockchain-based shared Electronic Health Record (EHR) system, which provides patients and 
+        healthcare providers with easy access to secure health data.</p>
+        <p>The system captures a longitudinal view of the patient's healh story and enables patients to give or withdraw
+          consent over who may access their records. Health data are also secured on MedBloc by its unique encryption framework
+          and smart-contract-based access control mechanism. MedBloc not only demonstrates how the blockchain can establish NZ's first 
+          shared EHR system but it shows how blockchain can potentially disrupt the entire medical technology domain.
+        </p>
+        <div class="rol">
+          <div class="col-sm-12">
+            <img src="images/logos/fabric.png" height="40">
+            <img src="images/logos/docker.png" height="40">
+            
+          </div>
+
+        </div>
+        <br>
+        <a class="btn button-green" href="https://github.com/j-x-huang/Medical-Blockchain">View on GitHub</a>
+        <a class="btn button-green" href="files/MedBloc_poster.pdf" target="_blank">Download Poster</a>
+        <a class="btn button-green" href="files/MedBloc_whitepaper.pdf" target="_blank">Download Whitepaper</a>
+
+      </div>
+      <div class="col-sm-4">
+
+        <img src="images/MedBloc.png" alt="medbloc" width="100%">
+
+
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
+
+
+  <!-- Award nomination -->
+  <div class="container-fluid bg-lgray text-left">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <img src="images/ignite.png" width="100%">
+      <img src="images/ignite2.png" width="100%">
+      
+    </div>
+    <div class="col-sm-6">
+      <h3>Award Nominations App</h3>
+      <p>This is a web app which enables staff members to nominate their peers for a variety of end-of-year awards.
+      </p>
+      <p>This apps allows users to view all staff members who have been nominated, make nominations (for any staff) and provide justification,
+        filter nominations based on the award category or person's name, and like/comment on existing nominations.
+      </p>
+      <p>It also provides functionality for administrators to lockdown the website (after voting closes) and to quickly tally and export the results.</p>
+      <p>This was developed in a team of 8, following Agile practices (scrum). We employed practices such as 
+        daily standups, sprint plannning, sprint reviews and sprint retrospectives.
+      </p>
+      <p>This app was made for MYOB.</p>
+
+      <div class="rol">
+        <div class="col-sm-12">
+          <img src="images/logos/react.png" height="40">
+          <img src="images/logos/firebase.png" height="40">
+        </div>
+
+      </div>
+      <br>
+      <a class="btn button-green" href="https://github.com/j-x-huang/AwardNominationApp">View on GitHub</a>
+      
+      
+
+
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+
+
+
 
   <!-- Task Scheduler -->
   <div class="container-fluid bg-white text-left">
@@ -134,10 +215,10 @@
         <h3>Task Scheduler</h3>
         <p>
           This is an application which determines the optimal way to schedule a program on a multi-core CPU. </p>
-          <p>First it reads a directed-acyclic graph, which 
-          represents the series of tasks that are performed by the program. Then it uses an A-Star branch and bound algorithm to order and map each task
-          onto a processor in a way such that the execution time is optimal. The search algorithm is parallelised, so that it uses multiple processors, to speed up the search.
-           The final output is the optimal schedule of the task series. 
+        <p>First it reads a directed-acyclic graph, which represents the series of tasks that are performed by the program.
+          Then it uses an A-Star branch and bound algorithm to order and map each task onto a processor in a way such that
+          the execution time is optimal. The search algorithm is parallelised, so that it uses multiple processors, to speed
+          up the search. The final output is the optimal schedule of the task series.
         </p>
         <p>The application also comes with a GUI which shows the best schedule it has currently found.</p>
         <p>This project was completed in a team of 5.</p>
@@ -169,13 +250,13 @@
     </div>
     <div class="col-sm-6">
       <h3>Voxspell</h3>
-      <p>Voxspell is a spelling aid application that aims to improve users’ spelling. It's primarily targeted for primary school students.
-         The application is written in Java, using
-        Java’s Swing API to provide the GUI. The spelling aid uses word dictation to test the users spelling. Bash scripts were used to
-      code the backend of the app and it uses a Linux-based Text-to-Speech framework, Festival, for word dictation.</p>
-        <p>Users were to complete a series of increasingly difficult spelling quizzes to improve their spelling. 
-          Video and sound rewards are played back to the users depending on how well they do on the quiz.</p>
-          <p>This project was done in my second year of university.</p>
+      <p>Voxspell is a spelling aid application that aims to improve users’ spelling. It's primarily targeted for primary school
+        students. The application is written in Java, using Java’s Swing API to provide the GUI. The spelling aid uses word
+        dictation to test the users spelling. Bash scripts were used to code the backend of the app and it uses a Linux-based
+        Text-to-Speech framework, Festival, for word dictation.</p>
+      <p>Users were to complete a series of increasingly difficult spelling quizzes to improve their spelling. Video and sound
+        rewards are played back to the users depending on how well they do on the quiz.</p>
+      <p>This project was done in my second year of university.</p>
 
       <div class="rol">
         <div class="col-sm-12">
@@ -199,13 +280,17 @@
     <div class="col-sm-6">
       <h3>Space Crisis</h3>
       <p>This is a 2D puzzle-platformer game made using Unity 3D. The player solves puzzles and riddles to improve their critical
-        thinking.</p>
+        thinking.
+      </p>
 
-      <p>In the game, you play as a team of astronauts who have crash landed on an undiscovered alien planet. The players must find resources and communicate with the aliens on the planet in order to fix their space ship and escape from the planet. </p>
-          <p>The aliens will sometimes give riddles and reward the players if they get the correct answer. In addition to this, there are obstacles laid out throughout the map, which will require critical thinking on the player’s part to solve.
-          </p>
-        
-        <p>This project was done in a team of 8 people.</p>
+      <p>In the game, you play as a team of astronauts who have crash landed on an undiscovered alien planet. The players must
+        find resources and communicate with the aliens on the planet in order to fix their space ship and escape from the
+        planet. </p>
+      <p>The aliens will sometimes give riddles and reward the players if they get the correct answer. In addition to this,
+        there are obstacles laid out throughout the map, which will require critical thinking on the player’s part to solve.
+      </p>
+
+      <p>This project was done in a team of 8 people.</p>
       <div class="rol">
         <div class="col-sm-12">
           <img src="images/logos/unity.png" height="40">
@@ -235,10 +320,12 @@
     </div>
     <div class="col-sm-6">
       <h3>Contoso Bank Chatbot</h3>
-      <p>A banking chatbot made using the Microsoft Bot Framework, LUIS (a natural language processor) and Node JS. It is created for a fictional bank
-        called Contoso Bank.
+      <p>A banking chatbot made using the Microsoft Bot Framework, LUIS (a natural language processor) and Node JS. It is created
+        for a fictional bank called Contoso Bank.
       </p>
-      <p>The chatbot helps users with everyday banking, such as: viewing balances, opening accounts, transferring money and more.</p>
+      <p>The chatbot helps users with everyday banking, such as: viewing balances, opening accounts, transferring money and
+        more.
+      </p>
       <p>It is available to use on Contoso Bank's (fictional) website and on Skype.</p>
 
       <div class="rol">
@@ -263,8 +350,9 @@
     <div class="col-sm-1"></div>
     <div class="col-sm-6">
       <h3>Explore Your Neighbourhood</h3>
-      <p>An image-recognition mobile app created within Xamarin Forms. Users are given a list of objects that can be typically found in a suburban area. 
-        When users take a photo, the app will identify, via the Microsoft's Custom Vision API, whether the object in the photo is on the list</p>
+      <p>An image-recognition mobile app created within Xamarin Forms. Users are given a list of objects that can be typically
+        found in a suburban area. When users take a photo, the app will identify, via the Microsoft's Custom Vision API,
+        whether the object in the photo is on the list</p>
       <div class="rol">
         <div class="col-sm-12">
           <img src="images/logos/csharp.png" height="40">
@@ -291,12 +379,14 @@
     <div class="col-sm-6">
       <h3>Test Driven Development</h3>
       <p>This is a project done for a real client. It was completed in a team of 4.</p>
-      <p>The product that our client wanted was an online search engine for start-up companies and small businesses to analyse the market that they are interested in entering.</p>
-      <p>For this project we gathered requirements for the product by interviewing our client. We then formed user stories (to represent the requirements) 
-      and created a user story map. Additionally, High-Fidelity (Hi-Fi) prototypes was made for the product.</p>
-      <p>For the second part of the project, we applied Test-driven Design (TDD), Behaviour-driven Design (BDD) and 
-      Continuous Integration (CI) in our implementation of the product. The main focus was on writing quality test cases, therefore, no functional system
-      was implemented for this project.</p>
+      <p>The product that our client wanted was an online search engine for start-up companies and small businesses to analyse
+        the market that they are interested in entering.</p>
+      <p>For this project we gathered requirements for the product by interviewing our client. We then formed user stories (to
+        represent the requirements) and created a user story map. Additionally, High-Fidelity (Hi-Fi) prototypes was made
+        for the product.</p>
+      <p>For the second part of the project, we applied Test-driven Design (TDD), Behaviour-driven Design (BDD) and Continuous
+        Integration (CI) in our implementation of the product. The main focus was on writing quality test cases, therefore,
+        no functional system was implemented for this project.</p>
 
 
 
@@ -309,16 +399,9 @@
         </div>
 
       </div>
-      <br>
-      <button class="btn button-green">View on GitHub</button>
-
 
     </div>
     <div class="col-sm-1"></div>
-  </div>
-
-  <div class="container-fluid bg-white text-left">
-    <h3>TODO</h3>
   </div>
 
   <!-- Skills -->
@@ -326,10 +409,10 @@
     <h3>Skills</h3>
   </div>
   <div class="container-fluid bg-white text-left">
-  <div class="row">
-    <div class="col-sm-2"></div>
+    <div class="row">
+      <div class="col-sm-2"></div>
 
-    <div class="col-sm-8">
+      <div class="col-sm-8">
         <div class="panel panel-default">
           <div class="panel-heading">Languages</div>
           <div class="panel-body text-center">
@@ -369,6 +452,7 @@
           <div class="panel-body text-center">
             <img src="images/logos/angularjs.svg" alt="angularjs" width="120>">
             <img src="images/logos/nodejs.png" alt="nodejs" width="120>">
+            <img src="images/logos/react.png" alt="react" width="120">
             <img src="images/logos/bootstrap.png" alt="bootstrap" width="120">
             <img src="images/logos/xamarin.png" alt="xamarin" width="120">
 
@@ -390,6 +474,9 @@
           <div class="panel-body text-center">
             <img src="images/logos/git.png" alt="git" width="120>">
             <img src="images/logos/bash.png" alt="bash" width="120>">
+            <img src="images/logos/docker.png" alt="docker" width="120">
+            <img src="images/logos/fabric.png" alt="docker" width="120">
+            
 
           </div>
         </div>
@@ -408,7 +495,8 @@
       <a href="mailto:huangxjack@gmail.com">huangxjack@gmail.com</a>
       <br>(+64) 027 894 7555
     </p>
-    <p>Feel free to connect with me on <a href="">LinkedIn</a> as well.</p>
+    <p>Feel free to connect with me on
+      <a href="https://www.linkedin.com/in/jack-x-huang/">LinkedIn</a> as well.</p>
   </div>
 
   <!-- Footer -->
@@ -425,7 +513,7 @@
 
   </footer>
 
-<script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 
 </body>
 
